@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+    <title>南工|在远方的山上，陪你春风十里</title>
+</head>
+<body>
+	<div>
+		<div class="title">
+			<span>南工|在远方的山上，陪你春风十里</span>
+			<img src="img/share.jpg" onclick="share()"/>
+		</div>
+		<div class="schoolDetail1">
+			<img src="img/1.jpg" />
+			<p>以前一直觉得侧重于理工科的南工应当是一身硬气</p>
+			<p>可偏偏南工在南京一角的三月里</p>
+			<p>独出心裁生的柔美和清丽</p>
+		</div>
+		<div class="img-2">
+			<img src="img/2.jpg" />
+		</div>
+		<div class="schoolDetail2">
+			<p>厚雪的益谷书声，逸夫的门槛墨深</p>
+			<p>等曦晨兰已深，追忆时光痕</p>
+			<img class="img-3" src="img/3.jpg" />
+		</div>
+		<div class="schoolDetail3">
+			<img src="img/5.jpg" />
+		</div>
+		<div class="schoolDetail4">
+			<img src="img/7.jpg" />
+		</div>
+		<div class="footer">
+			<img src="img/logo.jpg" />
+			<p>图片+文字来源于南京工业大学</p>
+			<button onclick="go('28')">聊聊你眼中的南工</button>
+		</div>
+	</div>
+	<div class="modal fade" id="show" >
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                分享
+	                <button type="button" class="close"
+	                        data-dismiss="modal" aria-hidden="true">
+	                    &times;
+	                </button>
+	            </div>
+	            <div class="modal-body clearfix">
+	                <a href="http://service.weibo.com/share/share.php?url=http://www.pocketuni.net/nanGong/&language=zh_cn&searchPic=true&style=number&pic=http://www.pocketuni.net/nanGong/img/20160401092124.jpg&title=南工|在远方的山上，陪你春风十里" target="_blank"><img src="img/LOGO.png"></a>
+	                <a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.pocketuni.net/nanGong&title=南工|在远方的山上，陪你春风十里&site=口袋校园&summary=口袋校园&pics=http://www.pocketuni.net/nanGong/img/20160401092124.jpg" title="分享到QQ空间" ><img style="margin-left: 10px;" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2293439163,77928339&fm=58" alt="" /></a>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</body>
+</html>
+    <script type="text/javascript" src="js/jquery.min.js" ></script>
+    <script src="js/bootstrap.min.js"></script>
+<script>
+	function go(){
+		 location.href = 'http://www.pocketuni.net/index.php?app=wap&mod=Topic&act=index&themes_id=28';
+	}
+	function share(){
+        $('#show').modal('show');
+    }
+</script>
