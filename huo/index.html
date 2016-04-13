@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name = "format-detection" content = "telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+    <title>谁的青春不迷茫</title>
+
+</head>
+<style>
+    .back > img{
+        width: 100%;
+    }
+
+    #button img:nth-child(1){
+        width: 50%;
+        float: left;
+
+    }
+    #button img:nth-child(2){
+        width: 50%;
+        float: right;
+    }
+    #show img{
+        width: 60px;
+        float: left;
+    }
+
+    .modal-backdrop{
+        margin:  0 auto;
+    }
+</style>
+<body>
+<div class="back">
+<img class="img-responsive" src="img/1(3).png">
+</div>
+<div id="button" class="clearfix">
+    <img class="img-responsive" src="img/4(2).png" onclick="go('26')">
+    <img class="img-responsive" src="img/3(3).png" onclick="share()">
+</div>
+<img class="img-responsive" src="img/2(2).png">
+
+<div class="modal fade" id="show" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                分享
+                <button type="button" class="close"
+                        data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+            </div>
+            <div class="modal-body clearfix">
+                <a href="http://service.weibo.com/share/share.php?url=http://www.pocketuni.net/huo/&language=zh_cn&searchPic=false&style=number" target="_blank"><img src="img/LOGO.png"></a>
+                <a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.pocketuni.net/huo&title=谁的青春不迷茫&site=口袋校园&summary=口袋校园&pics=http://pic.pocketuni.net/data/upthumb/2016/0325/14/56f4d674d1323_80x80f.jpg" title="分享到QQ空间" ><img style="margin-left: 10px;" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2293439163,77928339&fm=58" alt="" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    function go(){
+        location.href = 'http://www.pocketuni.net/index.php?app=wap&mod=Topic&act=index&themes_id=26';
+    }
+    function share(){
+        $('#show').modal('show');
+    }
+</script>
+</html>

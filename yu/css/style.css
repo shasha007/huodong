@@ -1,0 +1,279 @@
+*{
+    max-width: 640px;
+
+}
+
+#showyu2 > .modal-dialog {
+    height: 100%;
+    margin: 0;
+}
+
+#showyu2 > .modal-dialog > .modal-content {
+    height: 100%;
+    background-color: inherit;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.back-cover {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 999;
+
+}
+
+.yu2-like {
+    width: 40%;
+    position: relative;
+    bottom: -60%;
+    left: 30%;
+    z-index: 1500;
+}
+
+.yu5_p {
+    position: relative;
+    top: -28%;
+    left: 20%;
+    width: 60%;
+    z-index: 3;
+
+}
+
+.yu4_anime {
+    position: absolute;
+    width: 90%;
+    /*width: 100px;*/
+    left: 4%;
+    height: 5px;
+    min-height: 5px;
+    max-height: 5px;
+    background: -webkit-linear-gradient(#ddd,#eee, #fff);
+    background: -o-linear-gradient(#ddd,#eee, #fff);
+    background: -moz-linear-gradient(#ddd,#eee, #fff);
+    background: linear-gradient(#ddd,#eee, #fff);
+
+    /*background-color: #fff;*/
+    -webkit-animation: yu5 3s infinite;
+    -moz-animation: yu5 3s infinite;
+    -o-animation: yu5 3s infinite;
+    animation: yu5 3s infinite;
+    -webkit-opacity: 0.5;
+    -o-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    z-index: 999;
+}
+
+
+@-webkit-keyframes yu5 {
+    from {
+        bottom: 5%;
+    }
+    50%{
+        bottom: 90%;
+    }
+    to {
+        bottom: 5%;
+    }
+
+}
+
+@-o-keyframes yu5 {
+    from {
+        bottom: 5%;
+    }
+    50%{
+        bottom: 90%;
+    }
+    to {
+        bottom: 5%;
+    }
+
+}
+
+@-moz-keyframes yu5 {
+    from {
+        bottom: 5%;
+    }
+    50%{
+        bottom: 90%;
+    }
+    to {
+        bottom: 5%;
+    }
+
+}
+
+@keyframes yu5 {
+    from {
+        bottom: 5%;
+    }
+    50%{
+        bottom: 90%;
+    }
+    to {
+        bottom: 5%;
+    }
+
+}
+.yu1_backimg, .yu1_button {
+    /*position: absolute;*/
+    z-index: 1
+}
+
+.yu1_backimg {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 640px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.yu1_button {
+    /*bottom: 5%;*/
+    margin: -150px auto;
+    text-align: center;
+    /*left: 25%;*/
+    /*width: 50%*/
+}
+
+.yu2_back a, .yu2_backimg {
+    width: 100%;
+    position: absolute
+}
+
+.yu2_back {
+    height: 100%;
+}
+
+.yu2_back a {
+    max-width: 640px;
+    bottom: 17%;
+    height: 15%;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    z-index: 2000
+}
+
+.yu2_backimg {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    z-index: 1
+}
+
+.yu2_back a img {
+    width: 33%;
+    float: left
+}
+
+.yu3_a {
+    height: 100% !important;
+    bottom: 0 !important
+}
+
+.yu3_a img {
+    position: absolute;
+    bottom: 8% !important
+}
+
+.yu3_a img:nth-child(1) {
+    width: 20%;
+    left: 10%
+}
+
+.yu3_a img:nth-child(2) {
+    width: 25%;
+    right: 10%
+}
+
+.yu3_person, .yu4 {
+    left: 10%;
+    width: 80%;
+    position: relative;
+}
+
+.yu3_person {
+
+    top: 3%;
+    z-index: 2
+}
+
+.yu4 {
+    top: 16%;
+    z-index: 3
+}
+
+.yu4 p {
+    margin: 10px 0
+}
+
+.yu4_1 {
+    position: relative;
+    width: 60%;
+    top: 45%;
+    left: 20%;
+    z-index: 5
+}
+
+.yu5 {
+    position: relative;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    z-index: 3
+}
+
+.yu5_bottom, .yu5_bottom1, .yu6_button {
+    position: relative;
+    z-index: 5
+}
+
+.yu5_bottom {
+    width: 20%;
+    left: 15%;
+    bottom: 27%;
+}
+
+.yu5_bottom1 {
+    width: 30%;
+    right: 12%;
+    bottom: 47%;
+    float: right;
+}
+
+.yu6_button {
+    bottom: 20%;
+    width: 24%;
+}
+
+#show img{
+    width: 60px;
+    float: left;
+}
+
+.ng-scope{
+    max-width: 640px;
+    height: 100%;
+    margin: 0 auto;
+}
+.modal-backdrop{
+    margin:  0 auto;
+}

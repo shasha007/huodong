@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>清明小长假，你要怎么过？</title>
+    <link href="public/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css?v=001" rel="stylesheet">
+    <link href="css/reset.css?v=001" rel="stylesheet">
+</head>
+<style>
+    html{
+        max-width: 640px;
+        margin: 0 auto;
+    }
+    .h-qing-btn1 img{
+        float: left;
+    }
+    .h-qing-btn1 img:nth-child(1){
+        width: 24%;
+    }
+    .h-qing-btn1 img:nth-child(2){
+        width: 51%;
+    }
+    .h-qing-btn1 img:nth-child(3){
+        width: 24.7%;
+    }
+    .h-qing-btn2 img{
+        float: left;
+    }
+    .h-qing-btn2 img:nth-child(1){
+        width: 37%;
+    }
+    .h-qing-btn2 img:nth-child(2){
+        width: 24.2%;
+    }
+    .h-qing-btn2 img:nth-child(3){
+        width: 38.8%;
+    }
+    .back > img{
+        width: 100%;
+    }
+
+    #button img:nth-child(1){
+        width: 50%;
+        float: left;
+
+    }
+    #button img:nth-child(2){
+        width: 50%;
+        float: right;
+    }
+    #show img{
+        width: 60px;
+        float: left;
+    }
+
+    .modal-backdrop{
+        margin:  0 auto;
+    }
+</style>
+<body class="">
+<img class="img-responsive" src="img/header.png">
+<div class="h-qing-btn1 clearfix">
+    <img src="img/1.png">
+    <img src="img/2.png" onclick="go();">
+    <img src="img/3.png">
+</div>
+<div class="h-qing-btn2 clearfix">
+    <img src="img/4.png">
+    <img src="img/5.png" onclick="share();">
+    <img src="img/7.png">
+</div>
+<img class="img-responsive" src="img/8.png">
+
+<div class="modal fade" id="show" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                分享
+                <button type="button" class="close"
+                        data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+            </div>
+            <div class="modal-body clearfix">
+                <a href="http://service.weibo.com/share/share.php?url=http://www.pocketuni.net/qing/&language=zh_cn&searchPic=true&pic=http://www.pocketuni.net/qing/img/share.jpg&title=清明小长假，你要怎么过？&style=number" target="_blank"><img src="img/LOGO.png"></a>
+                <a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.pocketuni.net/qing&title=清明小长假，你要怎么过？&site=口袋校园&summary=口袋校园&pics=http://www.pocketuni.net/qing/img/share.jpg" title="分享到QQ空间" ><img style="margin-left: 10px;" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2293439163,77928339&fm=58" alt="" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="public/jquery.min.js"></script>
+<script src="public/bootstrap.min.js"></script>
+<script>
+    function go(){
+        location.href = 'http://www.pocketuni.net/index.php?app=wap&mod=Topic&act=index&themes_id=29';
+    }
+    function share(){
+        $('#show').modal('show');
+    }
+</script>
+</html>

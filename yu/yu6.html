@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name = "format-detection" content = "telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>“愚”乐圈</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css?v=001" rel="stylesheet">
+    <link href="css/reset.css?v=001" rel="stylesheet">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="yu2_back">
+    <img class="img-responsive yu2_backimg" src="img/yu6.png">
+
+</div>
+<div class="yu6_button" style="height:auto;!important; ">
+    <img class="img-responsive" src="img/yu6_button.png" onclick="share()" >
+</div>
+
+
+<div class="modal fade" id="show" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                分享
+                <button type="button" class="close"
+                        data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+            </div>
+            <div class="modal-body clearfix">
+
+                <a href="http://service.weibo.com/share/share.php?title=“愚”乐圈&url=http://www.pocketuni.net/yu/#/yu1/&language=zh_cn&searchPic=false&style=number" target="_blank"><img src="http://www.sinaimg.cn/blog/developer/wiki/LOGO_64x64.png"></a>
+                <a href="javascript:void(window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent('http://www.pocketuni.net/yu/#/yu1')));" title="分享到QQ空间" ><img style="margin-left: 10px;" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2293439163,77928339&fm=58" alt="" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+<script>
+    function share(){
+        $('#show').modal('show');
+    }
+</script>
+

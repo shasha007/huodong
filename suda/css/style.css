@@ -1,0 +1,42 @@
+*{margin: 0;padding: 0;}
+img{max-width: 100%;display: block;}
+body{max-width: 640px;margin: 0 auto;}
+#share{position: absolute;top:17.5px;right: 5%;width: 30px;}
+body img:first-child{height: 65px;}
+.transparent{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	top:0;
+	left: 0;
+	display: none;
+}
+.transparent div{
+	width: 80%;
+	height: auto;
+	padding: 10px 0;
+	background: #fff;
+	border-radius:10px ;
+	display: table;
+	text-align: center;
+	margin: 10% auto;
+}
+.transparent div img{width: 64px;height: 64px;display: inline-block;margin: 0 5%;}
+.animation{
+	background: #fff;
+}
+.animation img{display: block;margin:50% auto;}
+.toChat{
+	overflow: hidden;
+	position: relative;
+}
+.toChat img{height: auto !important;position: relative;}
+.toChat a{
+	display: block;
+	width: 40%;
+	height: 30px;
+	position: absolute;
+	bottom: 18px;
+	left: 30%;
+}

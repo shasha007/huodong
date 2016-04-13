@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>文化节</title>
+    <link href="public/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css?v=001" rel="stylesheet">
+    <link href="css/reset.css?v=001" rel="stylesheet">
+    <script src="public/jquery.min.js"></script>
+</head>
+<style>
+    html{
+        max-width: 640px;
+        margin: 0 auto;
+    }
+
+    body{
+        background: url("img/h5.png") no-repeat ;
+        background-size:100% 100%;
+    }
+    header{
+        font-size: 20px;
+        text-align: center;
+    }
+    .h-wen-div{
+        margin-top: 10px;
+        padding:  5px 5px 20px;
+        background:#fff;
+        border-radius: 5px;
+        border: 1px solid #f7f7f7;
+    }
+    .h-wen-li{
+        width: 49%;
+        float: left;
+        margin-top: 3% ;
+        border: 1px solid #f7f7f7;
+        /*box-shadow: 0px 1px 5px #ccc*/
+    }
+    .h-wen-div div:nth-child(even){
+        margin-right: 2%;
+    }
+    .h-wen-li > p{
+        width: 85%;
+        height: 30px;
+        margin: 10px auto;
+        background: #b4d070;
+        color: #fff;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 3px;
+    }
+    .h-wen-cover{
+        /*position: relative;*/
+        /*top:-100%;*/
+        height: auto;
+        margin: 30px 0 50px;
+    }
+</style>
+<body class="">
+
+<div class="container h-wen-cover clearfix">
+    <header>
+        第十一届江苏省大学生文化艺术节活动方案征集评选
+    </header>
+    <div class="h-wen-div clearfix">
+        <img class="img-responsive" src="img/banner.png">
+        <div class="h-wen-li" onclick="goevent('156549')">
+            <img class="img-responsive" src="img/0.png">
+            <p >
+                传统文化
+            </p>
+        </div>
+        <div class="h-wen-li" onclick="goevent('156562')">
+            <img class="img-responsive" src="img/1.png">
+            <p >
+                时尚文化
+            </p>
+        </div>
+        <div class="h-wen-li" onclick="goevent('156565')">
+            <img class="img-responsive" src="img/2.png">
+            <p >
+                专业文化
+            </p>
+        </div>
+        <div class="h-wen-li" onclick="goevent('156569')">
+            <img class="img-responsive" src="img/3.png">
+            <p >
+                科创文化
+            </p>
+        </div>
+        <div class="h-wen-li" onclick="goevent('156572')">
+            <img class="img-responsive" src="img/4.png">
+            <p >
+                体育文化
+            </p>
+        </div>
+        <div class="h-wen-li" onclick="goevent('156573')">
+            <img class="img-responsive" src="img/5.png">
+            <p >
+                其他
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function goevent(id){
+        Android.openInternalPage("eventDetails", "", "", id,"", "","");
+    }
+</script>
+</body>
+</html>
