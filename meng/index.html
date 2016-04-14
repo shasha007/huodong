@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>有梦想 正青春</title>
+</head>
+<style>
+    *{
+        margin: 0 ;
+
+    }
+    body{
+        max-width: 640px;
+        margin: 0 auto;
+    }
+    img{
+        width: 100%;
+    }
+    .meng{
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: 1;
+    }
+    .meng1{
+        position: relative;
+        z-index: 2;
+    }
+    .mengdiv{
+        position: relative;
+        top:-10px;
+        width: 70%;
+        left: 15%;
+        z-index: 2;
+        clear: both;
+    }
+    .mengdiv > .m1{
+         width: 45%;
+         float: left;
+     }
+    .mengdiv > .m2{
+        width: 45%;
+        float: right;
+    }
+    .mengp{
+        position: relative;
+        bottom: 10px;
+        /*top:-60px;*/
+        /*height: 40px;*/
+        /*line-height: 20px;*/
+        padding: 0 15px;
+        color: #c29152;
+        z-index: 2;
+        clear: both;
+    }
+
+    @media screen and (max-height: 600px) {
+        .mengp{
+            top: 0px;
+        }
+
+        .mengp p{
+            margin: 5px auto;
+            text-align: center;
+        }
+    }
+    @media screen and (min-height: 601px) {
+        .mengp{
+            top: 15px;
+        }
+        .mengp p{
+            margin: 15px auto;
+            text-align: center;
+        }
+    }
+</style>
+<body>
+<img class="meng1" src="img/meng1.png">
+<div class="mengdiv">
+    <img class="m1" src="img/m1.png" onclick="goevent('152047')">
+    <img class="m2" src="img/m2.png" onclick="goevent('152047')">
+</div>
+<div class="mengp">
+    <p>网上投票: 4月11日至4月14日 PU板块积攒投票</p>
+    <p>现场投票: 4月11日至4月14日 校园内现场投票</p>
+</div>
+<img class="meng" src="img/bg.png">
+
+</body>
+</html>
+<script>
+    function goevent(id){
+        Android.openInternalPage("eventDetails", "", "", id,"", "","");
+    }
+</script>
