@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>如何使你在淮海园遇见我</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<img src="http://pic.pocketuni.net/data/sys_pic/huaiHai/02.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/huaiHai/03.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/huaiHai/04.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/huaiHai/05.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/huaiHai/06.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/huaiHai/07.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/huaiHai/08.jpg" />
+	<div class="toContact">
+		<a href="http://www.pocketuni.net/index.php?app=wap&mod=Topic&act=index&themes_id=28" id="toContact">
+			<img src="http://pic.pocketuni.net/data/sys_pic/huaiHai/09.jpg">
+		</a>
+	</div>
+	<!--分享-->
+	<img src="http://pic.pocketuni.net/data/sys_pic/huaiHai/10.jpg" id="share"/>
+	<div class="transparent" id="masking">
+		<div id="icon">
+			 <a href="http://service.weibo.com/share/share.php?url=http://www.pocketuni.net/zhuanti/huaiHai/&language=zh_cn&searchPic=true&style=number&pic=http://pic.pocketuni.net/data/sys_pic/huaiHai/01.jpg&title=如何使你在淮海园遇见我"><img src="http://pic.pocketuni.net/data/sys_pic/huaiHai/LOGO.png"></a>
+	         <a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.pocketuni.net/zhuanti/huaiHai&title=如何使你在淮海园遇见我&site=口袋校园&summary=口袋校园&pics=http://pic.pocketuni.net/data/sys_pic/huaiHai/01.jpg" title="分享到QQ空间" ><img style="margin-left: 10px;" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2293439163,77928339&fm=58" alt="" /></a>
+		</div>
+	</div>
+</body>
+</html>
+<script>
+	var share=document.getElementById("share");
+	var mask=document.getElementById("masking");
+	var icon=document.getElementById("icon");
+	share.addEventListener("click",shareTo);
+	mask.addEventListener("click",slideUp);
+	function shareTo(){
+		mask.style.display="block";
+	}
+	function slideUp(e){
+		if(e.target.getAttribute("id")==="masking"){
+			mask.style.display="none";
+		}
+	}
+</script>
