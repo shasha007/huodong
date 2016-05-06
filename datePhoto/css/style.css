@@ -6,13 +6,16 @@ img{
 body{
 	max-width: 640px;
 	margin: 0 auto;
+	position: relative;
+	z-index: 1;
 }
 .toContact img{
 	width: 100%;
 }
 #share{
 	position: absolute;
-	top: 1%;
+	z-index: 999;
+	top: 0%;
 	right:1%;
 	width: 10%;
 }
