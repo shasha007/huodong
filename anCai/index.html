@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>陪你看安财</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<img src="http://pic.pocketuni.net/data/sys_pic/anCai/01.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/anCai/02.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/anCai/03.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/anCai/04.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/anCai/05.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/anCai/06.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/anCai/07.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/anCai/08.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/anCai/09.jpg" />
+	<div class="toContact">
+		<a href="http://www.pocketuni.net/index.php?app=wap&mod=Topic&act=index&themes_id=28" id="toContact">
+			<img src="http://pic.pocketuni.net/data/sys_pic/anCai/11.png">
+		</a>
+	</div>
+	<!--分享-->
+	<div class="shareDiv">
+		<img src="http://pic.pocketuni.net/data/sys_pic/anCai/14.png" id="share"/>
+	</div>
+	<div class="transparent" id="masking">
+		<div id="icon">
+			 <a href="http://service.weibo.com/share/share.php?url=http://www.pocketuni.net/zhuanti/anCai/&language=zh_cn&searchPic=true&style=number&pic=http://pic.pocketuni.net/data/sys_pic/anCai/15.jpg&title=陪你看安财"><img src="http://pic.pocketuni.net/data/sys_pic/anCai/LOGO.png"></a>
+	         <a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.pocketuni.net/zhuanti/anCai&title=陪你看安财&site=口袋校园&summary=口袋校园&pics=http://pic.pocketuni.net/data/sys_pic/anCai/15.jpg" title="分享到QQ空间" ><img style="margin-left: 10px;" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2293439163,77928339&fm=58" alt="" /></a>
+		</div>
+	</div>
+	<!--空白-->
+	<div>
+		<img src="http://pic.pocketuni.net/data/sys_pic/anCai/13.jpg" height="30%" width="100%"/>
+	</div>
+</body>
+</html>
+<script>
+	var share=document.getElementById("share");
+	var mask=document.getElementById("masking");
+	var icon=document.getElementById("icon");
+	var chat=document.getElementById("toContact");
+	var ani=document.getElementById("animation");
+	share.addEventListener("click",shareTo);
+	mask.addEventListener("click",slideUp);
+	function shareTo(){
+		mask.style.display="block";
+	}
+	function slideUp(e){
+		if(e.target.getAttribute("id")==="masking"){
+			mask.style.display="none";
+		}
+	}
+</script>
