@@ -1,0 +1,205 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,p {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ outline: 0;
+ font-size: 100%;
+}
+body{
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+ul li{list-style: none;}
+.head{
+	width: 90%;
+	height: 39px;
+	padding: 0 5%;
+	border-bottom: 1px solid #ccc;
+	background: #fff;
+	position: relative;
+}
+.head img{
+	display: block;
+	height: 20px;
+	position: absolute;
+	top:10px;
+}
+.head #back{left: 5%;}
+.head #close{left: 15%;}
+.head #refresh{right: 5%;}
+.head span{
+	line-height: 39px;
+	text-align: center;
+	display:block;
+	margin: 0 auto;
+}
+.boradcast{
+	width: 90%;
+	height:auto ;
+	padding: 10px 5%;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #eee;
+}
+.boradcast img{
+	height: 20px;
+	float: left;
+	margin-right: 10px;
+}
+.boradcast span{
+	width: 73%;
+	display:block;
+	overflow: hidden;
+	font-size: 14px;
+	float: left;
+}
+.calendarArea{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background:#fdfcfc ;
+}
+.calendarArea p{
+	width: 90%;
+	height: 39px;
+	padding: 5px 5%;
+	border-bottom: 1px solid #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.calendarArea p img{
+	width: 20px;
+	display: inline-block;
+	margin: 0 30px;
+}
+.calendarArea p em{
+	font-style: normal;
+	color: #666;
+}
+.calendarArea ul{
+	width: 90%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.calendarArea ul li{
+	width:14.25%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	float: left;
+	font-size: 14px;
+	color: #555;
+}
+.calendarArea ul li.hasSign{
+	background-image: url(http://pic.pocketuni.net/data/sys_pic/signImg/signed.png);
+	background-size: 80%;
+	background-repeat:no-repeat;
+	background-position: center;
+	color: #fff;
+}
+.calendarArea ul li.current{
+	background-image:url(http://pic.pocketuni.net/data/sys_pic/signImg/signSel.png);
+	background-size: 80%;
+	background-repeat:no-repeat;
+	background-position: center;
+}
+.calendarArea div{
+	width: 90%;
+	height: 39px;
+	padding: 0 5%;
+	border-bottom: 1px solid #eee;
+	font-size: 14px;
+}
+.calendarArea div img{
+	float: left;
+	height: 20px;
+	margin-top: 9px;
+	margin-left: 5px;
+}
+.calendarArea div span{
+	display: block;
+	float: left;
+	line-height: 39px;
+	color: #888;
+}
+.calendarArea div span+span{color: #333;margin-left: 10px;}
+.calendarArea div em{font-style: normal;float: right;line-height: 39px;}
+.calendarArea div em+em{font-size: 20px;color: #ea5504;margin-right: 5px;}
+.calendarArea div i{
+	display: block;
+	width: auto;
+	height: 20px;
+	padding: 0 10px;
+	border-radius:10px ;
+	background:#e6cb7b ;
+	float: left;
+	margin-top: 10px;
+	font-style: normal;
+	margin-left: 10px;
+	color: #fff;
+}
+.calendarArea div i.success{background: #00d3be;}
+.calendarArea div i.warning{background: #e6cb7b;}
+.calendarArea div i.error{background: #ff6666;}
+.signDiv{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: 20px 0;
+	background: #f3f1ee;
+}
+.signDiv button{
+	width: 80%;
+	height: 40px;
+	border-radius:20px ;
+	background: #EA5504;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	outline: none;
+	
+}
+.signDiv button img{
+	height: 20px;
+	margin-right: 5px;
+}
+.signDiv button span{color: #fff;line-height: 40px;}
+.signDiv button.disabled{
+	opacity: 0.5;
+}
+.signArea{
+	width:300px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 50px;
+}
+.signArea .bgImg{max-width: 100%;}
+.signArea p{
+	width: 100%;
+	text-align: center;
+	color: #666;
+	position: absolute;
+	z-index: 99;
+	top:100px;
+}
+.signArea .code{
+	width: 80%;
+	position: absolute;
+	left:10%;
+	top:130px;
+}

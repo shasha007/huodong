@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>测试你的生活费应该有多高</title>
+	</head>
+	<body background="img/bg.jpg">
+		<div class="result">
+			<img src="img/r_03.jpg" />
+			<a href="quesion.html"><img src="img/r_04.jpg" style="display:block;float: right;margin-right:10%;width: 20%;"/></a>
+		</div>
+		<!--分享-->
+		<div class="shareDiv">
+			<img src="img/r_06.jpg" id="share"/>
+		</div>
+		<div class="transparent" id="masking">
+			<div id="icon">
+				 <a href="http://service.weibo.com/share/share.php?url=http://www.pocketuni.net/zhuanti/LivingCost/&language=zh_cn&searchPic=true&style=number&pic=http://pic.pocketuni.net/data/sys_pic/LivingCost/15.jpg&title=测试你的生活费应该有多高"><img src="http://pic.pocketuni.net/data/sys_pic/LivingCost/LOGO.png"></a>
+		         <a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.pocketuni.net/zhuanti/LivingCost&title=测试你的生活费应该有多高&site=口袋校园&summary=口袋校园&pics=http://pic.pocketuni.net/data/sys_pic/LivingCost/15.jpg" title="分享到QQ空间" ><img style="margin-left: 10px;" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2293439163,77928339&fm=58" alt="" /></a>
+			</div>
+		</div>
+		<img src="img/bg_01.png" />
+		<div class="rcomment">
+			<a href="#"><img src="img/r_09.jpg" /></a>
+			<a href="#"><img src="img/r_11.jpg" /></a>
+		</div>
+		<img src="img/b_04.jpg" style="margin-bottom: -5%;"/>
+	</body>
+</html>
+<script>
+	var share=document.getElementById("share");
+	var mask=document.getElementById("masking");
+	var icon=document.getElementById("icon");
+	var chat=document.getElementById("toContact");
+	var ani=document.getElementById("animation");
+	share.addEventListener("click",shareTo);
+	mask.addEventListener("click",slideUp);
+	function shareTo(){
+		mask.style.display="block";
+	}
+	function slideUp(e){
+		if(e.target.getAttribute("id")==="masking"){
+			mask.style.display="none";
+		}
+	}
+</script>

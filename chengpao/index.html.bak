@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>晨跑打卡</title>
+    <link rel="stylesheet" href="css/signStyle.css" />
+</head>
+<body>
+	<div class="head">
+		<img src="img/ic-back.png" onclick="history.back(-1)">
+		<img src="img/close.png" id="close">
+		<span>晨跑打卡</span>
+		<img src="img/sx.png" id="refresh" onclick="location.reload()">
+	</div>
+	<div class="boradcast">
+		<img src="img/bc.png">
+		<span>由于天气原因,所以12月16号不需要打卡 </span>
+	</div>
+	<div class="calendarArea">
+		<p>
+			<img src="img/up.png" ontouchstart="prevM()">
+			<em id="yearNum"></em>
+			<em id="monthNum"></em>
+			<img src="img/down.png" ontouchstart="nextM()">
+		</p>
+		<ul id="calendar" data-year="2016" data-month="5"></ul>
+		<div>
+			<img src="img/days.png">
+			<span>总打卡天数</span>
+			<em>天</em>
+			<em>90</em>
+		</div>
+		<div>
+			<img src="img/ydk.png">
+			<span>2016.05.03</span>
+			<!--根据不同原因设置不同背景色，分为success,warning,error3种-->
+			<i class="warning ">放假/下雨</i>
+		</div>
+		<div>
+			<img src="img/cal.png">
+			<span>2016.05.30——2016.06.20</span>
+			<span>6:30-7:30</span>
+		</div>
+	</div>
+	<div class="signDiv">
+		<!--.如果下雨添加class   disabled-->
+		<button>
+			<img src="img/dk.png">
+			<span>打卡</span>
+		</button>
+	</div>
+	<script type="text/javascript" src="js/script.js" ></script>
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>文化节</title>
+    <link href="public/bootstrap.min.css" rel="stylesheet">
+    <link href="css/reset.css?v=001" rel="stylesheet">
+</head>
+<style>
+    html {
+        max-width: 940px;
+        margin: 0 auto;
+    }
+
+    body {
+        background: url("http://pic.pocketuni.net/data/sys_pic/wen_img/h5.png") no-repeat;
+        background-size: 100% 100%;
+        max-width: 940px !important;
+    }
+
+
+
+    .h-wen-div {
+        margin-top: 10px;
+        padding: 5px 5px 20px;
+        background: #fff;
+        border-radius: 5px;
+        border: 1px solid #f7f7f7;
+    }
+
+    @media screen and (max-width: 500px) {
+        @media screen and (max-width: 370px) {
+            .h-wen-li > div {
+                font-size: 12px;
+            }
+        }
+        @media screen and (min-width: 371px)  and (max-width: 500px) {
+            .h-wen-li > div {
+                font-size: 14px;
+            }
+        }
+        header {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 30px;
+            color: #1a4d73;
+        }
+        .h-wen-li {
+            width: 49%;
+            float: left;
+            margin-top: 3%;
+            border: 1px solid #f7f7f7;
+        }
+
+        .h-wen-div li:nth-child(even) {
+            margin-right: 2%;
+        }
+
+        .h-wen-li > div {
+            width: 94%;
+            margin: 10px auto;
+            padding: 3px 0;
+            background: #788ea8;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 3px;
+        }
+        .h-wen-li > div > p:nth-child(1) {
+            height: 60px;
+            text-align: center;
+            padding: 0 5px;
+            line-height: 20px;
+            overflow: hidden;
+        }
+
+        .h-wen-li > div > p:nth-child(2) {
+            height: 20px;
+            line-height: 15px;
+            padding: 5px 2px 0;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .h-wen-cover {
+            width: 96%;
+            height: auto;
+            margin: 30px 2%;
+            padding: 0 5px 10px;
+            background: #f4f2f0;
+            border-radius: 10px;
+        }
+    }
+
+    @media screen and (min-width: 501px) {
+        @media screen and (min-width: 501px)  and (max-width: 800px) {
+            header {
+                font-size: 30px;
+            }
+        }
+        @media screen and (min-width: 801px)  {
+            header {
+                font-size: 46px;
+            }
+        }
+        header {
+            text-align: center;
+            margin-top: 30px;
+            color: #1a4d73;
+        }
+        .h-wen-li {
+            width: 24%;
+            float: left;
+            margin-top: 3%;
+            margin-right: 1.33%;
+            border: 1px solid #f7f7f7;
+        }
+
+        .h-wen-li > div {
+            width: 90%;
+            margin: 10px auto;
+            padding: 3px 0;
+            background: #788ea8;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+            line-height: 30px;
+            border-radius: 3px;
+        }
+
+        .four {
+            margin-right: 0;
+        }
+        .h-wen-li > div > p:nth-child(1) {
+            height: 40px;
+            text-align: center;
+            padding: 0 5px;
+            line-height: 20px;
+            overflow: hidden;
+        }
+
+        .h-wen-li > div > p:nth-child(2) {
+            height: 20px;
+            line-height: 15px;
+            padding: 5px 5px 0;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .h-wen-cover {
+            width: 90%;
+            height: auto;
+            margin: 30px 5%;
+            padding: 0 15px 10px;
+            background: #f4f2f0;
+            border-radius: 10px;
+        }
+    }
+
+
+
+    .h-wen-cover > header {
+
+    }
+</style>
+<body class="">
+<header>
+    第十一届江苏省大学生文化艺术节
+</header>
+<div class="h-wen-cover clearfix">
+
+    <ul class="h-wen-div clearfix">
+        <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/ban.jpg">
+        <li class="h-wen-li" onclick="goevent('177417')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/1.jpg">
+
+            <div>
+                <p>江苏省"琴棋书话" 传统文化季</p>
+                <p>南京航空航天大学</p>
+            </div>
+        </li>
+        <li class="h-wen-li" onclick="goevent('177419')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/2.jpg">
+
+            <div>
+                <p>江苏省国学 知识普及大赛</p>
+                <p>南京信息工程大学</p>
+            </div>
+
+        </li>
+        <li class="h-wen-li" onclick="goevent('177421')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/3.jpg">
+
+            <div>
+                <p>江苏省“影像中国·大美民居”传统民居摄影大赛</p>
+                <p>扬州大学</p>
+            </div>
+        </li>
+        <li class="h-wen-li four" onclick="goevent('177443')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/4.jpg">
+
+            <div>
+                <p>江苏省传统养生 文化知识大赛</p>
+                <p>南京中医药大学</p>
+            </div>
+        </li>
+        <li class="h-wen-li clearfix" onclick="goevent('177445')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/5.jpg">
+
+            <div>
+                <p>江苏省“影像中国·大美民居”传统民居摄影大赛</p>
+                <p>南京晓庄学院</p>
+            </div>
+        </li>
+        <li class="h-wen-li" onclick="goevent('177447')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/6.jpg">
+
+            <div>
+                <p>江苏省大学生“撑起廉洁伞，踏上锦绣路”廉洁伞创作大赛</p>
+                <p>河海学院</p>
+            </div>
+        </li>
+        <li class="h-wen-li" onclick="goevent('177508')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/7.jpg">
+
+            <div>
+                <p>江苏省大学生达人秀</p>
+                <p>东南大学</p>
+            </div>
+        </li>
+        <li class="h-wen-li four" onclick="goevent('177511')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/8.jpg">
+
+            <div>
+                <p>江苏省大学生 校园歌手大赛</p>
+                <p>苏州经贸职业技术学院</p>
+            </div>
+        </li>
+        <li class="h-wen-li" onclick="goevent('177513')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/9.jpg">
+
+            <div>
+                <p>江苏省大学生 校园短剧大赛</p>
+                <p>南京审计大学</p>
+            </div>
+        </li>
+        <li class="h-wen-li" onclick="goevent('175910')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/10.jpg">
+
+            <div>
+                <p>江苏省大学生校园 原创微电影摄制大赛</p>
+                <p>淮阴工学院</p>
+            </div>
+        </li>
+        <li class="h-wen-li" onclick="goevent('175908')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/11.jpg">
+
+            <div>
+                <p>江苏省大学生 模拟联合国大会</p>
+                <p>中国矿业大学</p>
+            </div>
+        </li>
+        <li class="h-wen-li four" onclick="goevent('175906')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/12.jpg">
+
+            <div>
+                <p>江苏省大学生 理财高手大赛</p>
+                <p>江苏大学</p>
+            </div>
+        </li>
+        <li class="h-wen-li" onclick="goevent('175903')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/13.jpg">
+
+            <div>
+                <p>江苏省大学生“互联网+”商务谈判大赛</p>
+                <p>南京财经大学</p>
+            </div>
+        </li>
+        <li class="h-wen-li" onclick="goevent('175898')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/14.jpg">
+
+            <div>
+                <p>江苏省大学生 模拟法庭大赛</p>
+                <p>三江学院</p>
+            </div>
+        </li>
+        <li class="h-wen-li" onclick="goevent('177522')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/15.jpg">
+
+            <div>
+                <p>江苏省大学生“职场礼仪风采”大赛</p>
+                <p>常州工程职业技术学院</p>
+            </div>
+        </li>
+        <li class="h-wen-li four" onclick="goevent('175895')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/16.jpg">
+
+            <div>
+                <p>江苏省大学生概念 汽车设计大赛</p>
+                <p>江南大学</p>
+            </div>
+        </li>
+        <li class="h-wen-li" onclick="goevent('175893')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/17.jpg">
+
+            <div>
+                <p>江苏省大学生“重走长征，毅行万里”计步行走大赛</p>
+                <p>淮安信息职业技术学院</p>
+            </div>
+        </li>
+        <li class="h-wen-li" onclick="goevent('175892')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/18.jpg">
+
+            <div>
+                <p>江苏省大学生“舞动青春”——啦啦操大赛</p>
+                <p>江苏第二师范学院</p>
+            </div>
+        </li>
+        <li class="h-wen-li" onclick="goevent('175889')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/19.jpg">
+
+            <div>
+                <p>江苏省大学生“阳光体育，梦想中国”体育赛事解说大赛</p>
+                <p>南通大学杏林学院</p>
+            </div>
+        </li>
+        <li class="h-wen-li four" onclick="goevent('177528')">
+            <img class="img-responsive" src="http://pic.pocketuni.net/data/sys_pic/culture/20.jpg">
+
+            <div>
+                <p>江苏省大学生“一站到底”科创知识大赛</p>
+                <p>南京铁道职业技术学院</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<script>
+
+    function isphone() {
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    function goevent(id) {
+        if (isphone()) {
+            if (typeof(Android) == "undefined") {
+                window.location.href = "http://www.pocketuni.net/index.php?app=event&mod=Front&act=index&id=" + id;
+            } else {
+                Android.openInternalPage("eventDetails", "", "", id, "", "", "");
+            }
+        } else {
+            window.location.href = "http://www.pocketuni.net/index.php?app=event&mod=Front&act=index&id=" + id;
+        }
+
+    }
+</script>
+</body>
+</html>
