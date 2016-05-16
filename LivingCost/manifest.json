@@ -1,4 +1,4 @@
-﻿{
+{
     "@platforms": ["android", "iPhone", "iPad"],
     "id": "H50ACA0BF",/*应用的标识，创建应用时自动生成，勿手动修改*/
     "name": "LivingCost",/*应用名称，程序桌面图标名称*/
@@ -199,5 +199,60 @@
                 }
             }
         }
-    }
+    },
+	"dependencies": {
+		"pages": {
+			"quesion.html": {
+				"resources": [
+					"img/up.png",
+					"img/w2.png",
+					"img/q_03.jpg",
+					"img/btn2.png",
+					"js/script.js",
+					"jquery/jquery.min.js",
+					"img/q_04.jpg",
+					"css/style.css",
+					"img/bg.jpg",
+					"img/down.png",
+					"img/btn1.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"result2.html": {
+				"resources": [
+					"img/bg_01.png",
+					"img/r_11.jpg",
+					"img/r_06.jpg",
+					"img/r_04.jpg",
+					"img/b_04.jpg",
+					"img/r_05.jpg",
+					"img/r_09.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"result3.html": {
+				"resources": [
+					"quesion.html",
+					"img/r_03.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"img/LOGO.png",
+				"img/b_03.jpg",
+				"img/btn4.png",
+				"img/r_02.jpg",
+				"index.html",
+				"img/b_02.jpg",
+				"img/r_01.jpg",
+				"jquery/jquery.js",
+				"result.html"
+			]
+		}
+	}
 }

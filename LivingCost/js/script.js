@@ -41,10 +41,10 @@ $(function(){
 		//没有选择的场合禁止下一题
 		if(num<maxnum && ($(".btnA").attr('src')=='img/btn1.png' || $(".btnB").attr('src')=='img/btn1.png')){
 			setquestion(num);
-			alert(num);
+//			alert(num);
 			setKeys(num);
 			num++;
-		}else if(num==maxnum){
+		}else if(num==maxnum && ($(".btnA").attr('src')=='img/btn1.png' || $(".btnB").attr('src')=='img/btn1.png')){
 			//测试结果跳转
 			if(anANum==10){
 				window.location.href="result2.html";
@@ -75,16 +75,16 @@ $(function(){
 		}
 		setquestion(num);
 		setKeys(num);
-		$(".qcontentA").click(function(){
-			$(".btnA").attr("src","img/btn1.png");
-			$(".btnB").attr("src","img/btn2.png");
-			answers[num].keys='A';
-		});
-		$(".qcontentB").click(function(){
-			$(".btnA").attr("src","img/btn2.png");
-			$(".btnB").attr("src","img/btn1.png");
-			answers[num].keys='B';
-		});
+//		$(".qcontentA").click(function(){
+//			$(".btnA").attr("src","img/btn1.png");
+//			$(".btnB").attr("src","img/btn2.png");
+//			answers[num].keys='A';
+//		});
+//		$(".qcontentB").click(function(){
+//			$(".btnA").attr("src","img/btn2.png");
+//			$(".btnB").attr("src","img/btn1.png");
+//			answers[num].keys='B';
+//		});
 		//隐藏第一题的【上一题】标签
 		if($("#qNo").html().trim()=='测试题1/10'){
 			$("#up").hide();
@@ -99,20 +99,26 @@ $(function(){
 	$(".qcontentA").click(function(){
 		$(".btnA").attr("src","img/btn1.png");
 		$(".btnB").attr("src","img/btn2.png");
-		alert($(".qNo").html().trim())
-		answers[i].keys='A';
-		alert('nextFlag'+nextFlag);
-		alert('upFlag'+upFlag);
-		alert('Flag'+Flag);
+		//记住修改答案
+		$.each(answers, function(n,value) {	
+			if(value.questionNo==$(".qNo").html().trim()){
+				answers[n].keys='A';
+			}
+		});
 		if(nextFlag==1){
-			i++;	
+			i++;
 		}
 		anANum=anANum+1;
 	});
 	$(".qcontentB").click(function(){
 		$(".btnA").attr("src","img/btn2.png");
 		$(".btnB").attr("src","img/btn1.png");
-		answers[i].keys='B';
+		//记住修改答案
+		$.each(answers, function(n,value) {	
+				if(value.questionNo==$(".qNo").html().trim()){
+					answers[n].keys='B';
+				}
+			});
 		if(nextFlag==1){
 			i++;
 		}

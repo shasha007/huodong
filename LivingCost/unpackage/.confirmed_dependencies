@@ -1,1 +1,37 @@
-null
+{
+	"quesion.html": {
+		"resources": [
+			"img/up.png",
+			"img/w2.png",
+			"img/q_03.jpg",
+			"img/btn2.png",
+			"js/script.js",
+			"jquery/jquery.min.js",
+			"img/q_04.jpg",
+			"css/style.css",
+			"img/bg.jpg",
+			"img/down.png",
+			"img/btn1.png"
+		]
+	},
+	"result2.html": {
+		"resources": [
+			"img/bg_01.png",
+			"img/r_11.jpg",
+			"img/r_06.jpg",
+			"img/r_04.jpg",
+			"img/b_04.jpg",
+			"img/r_05.jpg",
+			"img/r_09.jpg"
+		]
+	},
+	"result3.html": {
+		"resources": [
+			"quesion.html",
+			"img/r_03.jpg"
+		],
+		"refer": [
+			"quesion.html"
+		]
+	}
+}
