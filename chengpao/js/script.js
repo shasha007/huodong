@@ -33,7 +33,6 @@ var yNum=document.getElementById("yearNum");
 			selectDay();
 		}
 		//下一月
-		
 		function nextM(){
 			month=month+1;
 			if(month>12){
@@ -100,4 +99,53 @@ var yNum=document.getElementById("yearNum");
 				});
 			}
 		}
-		
+//解析字符串
+function parseUrl(){
+//	http://my.oschina.net/wangkunYHY?disp=1&catalog=0&sort=time&
+	var u=window.location.href;
+	var parmeArr=[];
+	var parme=u.substring(u.indexOf("?")+1);
+	var signId;
+	parme=parme.split("&");
+	for(var i=0;i<parme.length;i++){
+		parmeArr[i]=parme[i].split("=");
+	}
+	for(var i=0;i<parmeArr.length;i++){
+		for(var j=0;j<parmeArr[i].length;j++){
+			if(parmeArr[i][j]=="sign_id"){
+				signId=parmeArr[i][j+1];
+			}
+		}
+	}
+	return signId;
+}
+//去除html标签
+function wipeLabel(content){
+	var c=content;
+	//广播站信息
+	var bcInfo=c.substring(c.indexOf(">")+1,c.lastIndexOf("<"));
+	return bcInfo;
+}
+//获取数据
+function getData(){
+	//获取当前URL id
+//	var signId=parseUrl();
+	var month=parseInt(document.getElementById("monthNum").innerText);
+	var xmlhttp;
+	if(window.XMLHttpRequest){
+		xmlhttp=new XMLHttpRequest();
+	}
+	else{
+		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	xmlhttp.open("GET","http://pocketuniv.com/index.php?app=wap&mod=DaySign&act=geteUserSignInfo&sign_id=1"+"&month="+month,true);
+	xmlhttp.send();
+	xmlhttp.onreadystatechange=function(){
+		if(xmlhttp.status==200&&xmlhttp.readyState==4){
+			console.log(xmlhttp.response)
+		}
+	}
+}
+window.onload=function(){
+	getData();
+}
