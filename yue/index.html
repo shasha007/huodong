@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>我们在一起 约吗？我是校园摄影师</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<img src="http://pic.pocketuni.net/data/sys_pic/yue/001.jpg" id="title"/>
+	<!--分享-->
+	<img src="http://pic.pocketuni.net/data/sys_pic/yue/011.png" id="share"/>
+	<div class="transparent" id="masking">
+		<div id="icon">
+			 <a href="http://service.weibo.com/share/share.php?url=http://www.pocketuni.net/zhuanti/yue/&language=zh_cn&searchPic=true&style=number&pic=http://pic.pocketuni.net/data/sys_pic/yue/14.jpg&title=我们在一起  约吗?我是校园摄影师"><img src="http://pic.pocketuni.net/data/sys_pic/yue/LOGO.png"></a>
+	         <a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.pocketuni.net/zhuanti/yue&title=我们在一起&site=约吗？我是校园摄影师&summary=约吗？我是校园摄影师&pics=http://pic.pocketuni.net/data/sys_pic/yue/14.jpg" title="分享到QQ空间" ><img style="margin-left: 10px;" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2293439163,77928339&fm=58" alt="" /></a>
+		</div>
+	</div>
+	<img src="http://pic.pocketuni.net/data/sys_pic/yue/002.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/yue/003.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/yue/004.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/yue/005.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/yue/006.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/yue/007.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/yue/008.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/yue/009.jpg" />
+	<img src="http://pic.pocketuni.net/data/sys_pic/yue/010.jpg" />
+	<div class="toContact" onclick="goHuo('186658')">
+			<img src="http://pic.pocketuni.net/data/sys_pic/yue/012.png">
+	</div>
+	<img src="http://pic.pocketuni.net/data/sys_pic/yue/013.png" class="company"/>
+</body>
+</html>
+<script>
+	var share=document.getElementById("share");
+	var mask=document.getElementById("masking");
+	var icon=document.getElementById("icon");
+	share.addEventListener("click",shareTo);
+	mask.addEventListener("click",slideUp);
+	function shareTo(){
+		mask.style.display="block";
+	}
+	function slideUp(e){
+		if(e.target.getAttribute("id")==="masking"){
+			mask.style.display="none";
+		}
+	}
+	function goHuo(id){
+        Android.openInternalPage("eventDetails", "", "", id,"", "","");
+    }
+</script>
