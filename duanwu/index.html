@@ -1,0 +1,93 @@
+<!--
+Created by huqiwen on 16/5/12.
+describe : 有画快说
+-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>我的端午这样过</title>
+</head>
+<body>
+<header>
+    <img class="show-img" src="http://pic.pocketuni.net/data/sys_pic/duanwu/d1.jpg">
+    <img id="share" src="http://pic.pocketuni.net/data/sys_pic/duanwu/header.png">
+</header>
+
+<article>
+<section>
+    <img class="show-img" src="http://pic.pocketuni.net/data/sys_pic/duanwu/d2.jpg">
+    <p>
+        &emsp13;  “一川烟草，满城风絮，梅子黄时雨”的时节，在盛夏到来前撑把油纸伞游走江南山水名胜之间，惬意又洒脱。于是就这样背起行囊，赖在了莫干山的怀抱里。
+    </p>
+</section>
+    <section>
+        <img class="show-img" src="http://pic.pocketuni.net/data/sys_pic/duanwu/d3.jpg">
+        <p>
+            &emsp13;  景区里还保留着挑夫和轿夫，不时看到他们脚步有力的抬着人或挑着货从我们身边过去，小路边上还有些摆卖竹制手工艺品的。匠人打磨的是竹子，磨砺的却是心性。
+        </p>
+    </section>
+    <section>
+        <img class="show-img" src="http://pic.pocketuni.net/data/sys_pic/duanwu/d4.jpg">
+        <p>
+            &emsp13; 干将和莫邪颇铸剑技艺之高超，面对楚王暴政时之坦然坚定，夫妻荣辱与共不离不弃之坚贞，都成了“剑魂”二字。
+        </p>
+
+    </section>
+    <section>
+        <img class="show-img" src="http://pic.pocketuni.net/data/sys_pic/duanwu/d5.jpg">
+        <p>
+            &emsp13; 参差楼阁起高岗,半为烟遮半树藏.百道泉源飞瀑布,四周山色蘸幽篁。
+        </p>
+    </section>
+    <section>
+        <img class="show-img" src="http://pic.pocketuni.net/data/sys_pic/duanwu/d6.jpg">
+        <p>
+            &emsp13; “从前的锁也好看，钥匙精美有样子，你锁了，人家就懂了。”这句《从前慢》里的歌词完美表达了古时人类的情感的朴实与真诚。
+    </p>
+    </section>
+    <section>
+        <img class="show-img" src="http://pic.pocketuni.net/data/sys_pic/duanwu/d7.jpg">
+        <p>
+            &emsp13; 旧时曾有栖溪十六景之说，多少个朝代的女子唱着同一首歌，多少朵莲花在季节里等待开开落落，只为你曾打江南走过，只为那达达的马蹄由远而近，又远。        </p>
+    </section>
+    <section>
+        <img class="show-img" src="http://pic.pocketuni.net/data/sys_pic/duanwu/d8.jpg">
+        <p>
+           &emsp13; 下渚湖，不同于莫干山的巍美与古镇的韵美，水总让人觉得变化无穷，随人之心态而幻不同形。可坚强，可娇弱。
+        </p>
+        <p class="text-left"> 图/ 文  ：   黄蕾诗    南通大学</p>
+        </section>
+
+</article>
+<footer>
+    <img id="button" src="http://pic.pocketuni.net/data/sys_pic/duanwu/f1.png">
+    <img id="footer" src="http://pic.pocketuni.net/data/sys_pic/duanwu/footer.png">
+</footer>
+</body>
+<script>
+
+    var button = document.getElementById("button");
+var share = document.getElementById("share");
+    share.addEventListener("click", function () {
+        try{
+            Android.share("我的端午这样过--江南里的小长假 www.pocketuni.net/zhuanti/duanwu/index.html", "我的端午这样过--江南里的小长假", "www.pocketuni.net/zhuanti/duanwu/index.html", "http://pic.pocketuni.net/data/sys_pic/duanwu/share.jpeg");
+        }catch (e){
+            alert("请在PU中打开");
+        }
+    },false);
+    button.addEventListener("click", function () {
+        if (typeof(Android) == "undefined") {
+            alert("请在PU中打开");
+        }else{
+            location.href="http://www.pocketuni.net/index.php?app=wap&mod=Topic&act=index&themes_id=69";
+        }
+
+    },false);
+</script>
+</html>

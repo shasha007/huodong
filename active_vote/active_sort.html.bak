@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>对话</title>
+    <link rel="stylesheet" href="css/active_.css" />
+</head>
+<body>
+	<img src="http://pic.pocketuni.net/data/sys_pic/voteImg/share.png" class="active_share" ontouchstart="share()">
+	<img src="http://pic.pocketuni.net/data/sys_pic/voteImg/img8.png" id="activeBan" onload="initSet()">
+	<div class="active_sort" id="activeSort">
+		
+	</div>
+
+</body>
+<script>
+	function initSet(){
+		var aban=document.getElementById("activeBan");
+		var asort=document.getElementById("activeSort");
+		var sh=window.screen.availHeight;
+		var h=aban.offsetHeight;
+		asort.style.minHeight=(sh-h)+"px";
+		process();
+	}
+	function process(){
+		var xmlhttp;
+		var asort=document.getElementById("activeSort");
+		if(window.XMLHttpRequest){
+			xmlhttp=new XMLHttpRequest();
+		}
+		else{
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.open("POST","http://pocketuni.net/index.php?app=home&mod=Public&act=getObtainRanking&page=1");
+		xmlhttp.send();
+		xmlhttp.onreadystatechange=function(){
+			if(xmlhttp.status==200&&xmlhttp.readyState==4){
+				var data=JSON.parse(xmlhttp.response).data;
+				var dataLen=data.length;
+				var asort=document.getElementById("activeSort");
+				for(var i=0;i<dataLen;i++){
+					var initP=Math.ceil(data[i].count/20);
+					var divP=document.createElement("div");
+					var div1=document.createElement("div");
+					var p1=document.createElement("p");
+					var p2=document.createElement("p");
+					var span=document.createElement("span");
+					div1.innerText=data[i].ranking;
+					p1.innerText=data[i].schoolName;
+					p1.setAttribute("class","rangecon");
+					p2.setAttribute("class","range");
+					p2.setAttribute("id","range");
+					p2.appendChild(span);
+					divP.appendChild(div1);
+					divP.appendChild(p1);
+					divP.appendChild(p2);
+					asort.appendChild(divP);
+					var proitem=p2.getElementsByTagName("span")[0];
+					
+					if(initP<=30){
+						proitem.setAttribute("class","min");
+					}
+					else if(initP>60){
+						proitem.setAttribute("class","max");
+					}
+					else{
+						proitem.setAttribute("class","mid");
+					}
+					var w=p2.offsetWidth;
+						proitem.style.maxWidth=w-4+"px";
+						proitem.style.width=Math.round(initP*w/100)-2+"px";
+					}
+			}
+		}
+	}
+
+
+	function share(){
+		alert("show")
+		try{
+			Android.share('PU口袋校园联合李响，与你对话真实的自己 http://www.pocketuni.net/zhuanti/active_vote/', 'PU口袋校园联合李响，与你对话真实的自己','http://www.pocketuni.net/zhuanti/active_vote/','http://pic.pocketuni.net/data/sys_pic/voteImg/shareImg.jpg')
+		}
+		catch(e){
+			setTimeout(function(){
+				try{
+					Android.share('PU口袋校园联合李响，与你对话真实的自己 http://www.pocketuni.net/zhuanti/active_vote/', 'PU口袋校园联合李响，与你对话真实的自己','http://www.pocketuni.net/zhuanti/active_vote/','http://pic.pocketuni.net/data/sys_pic/voteImg/shareImg.jpg')
+				}
+				catch(e){
+					alert(e);
+				}
+			},200);
+
+		}
+	}
+</script>
+</html>

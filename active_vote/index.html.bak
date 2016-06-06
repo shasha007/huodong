@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>对话</title>
+    <link rel="stylesheet" href="css/active_.css" ontouchstart="share()"/>
+</head>
+<body>
+	<img src="http://pic.pocketuni.net/data/sys_pic/voteImg/share.png" class="active_share">
+	<img src="http://pic.pocketuni.net/data/sys_pic/voteImg/img1.jpg">
+	<img src="http://pic.pocketuni.net/data/sys_pic/voteImg/img2.jpg">
+	<img src="http://pic.pocketuni.net/data/sys_pic/voteImg/img3.jpg">
+	<img src="http://pic.pocketuni.net/data/sys_pic/voteImg/img4.jpg">
+	<img src="http://pic.pocketuni.net/data/sys_pic/voteImg/img5.jpg">
+	<div class="op_area">
+		<img src="http://pic.pocketuni.net/data/sys_pic/voteImg/img6.jpg">
+		<img src="http://pic.pocketuni.net/data/sys_pic/voteImg/button1.png" class="button_img" ontouchstart="getData(_url,0)">
+		<img src="http://pic.pocketuni.net/data/sys_pic/voteImg/button2.png" class="button_img button_img2" ontouchstart="getData(_url,1)">
+		<a href="active_rules.html"><img src="http://pic.pocketuni.net/data/sys_pic/voteImg/rule.png" class="button_rule_img"></a>
+	</div>
+	<img src="http://pic.pocketuni.net/data/sys_pic/voteImg/img7.jpg">
+
+	<!--提示-->
+	<div class="active_tips"><img src="http://pic.pocketuni.net/data/sys_pic/voteImg/tc.jpg"></div>
+</body>
+<script type="text/javascript" src="js/active_script.js" ></script>
+</html>
