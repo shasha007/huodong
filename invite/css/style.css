@@ -1,0 +1,58 @@
+
+article{
+    padding: 0 15px;
+    margin: 0 auto;
+    color: #fff;
+}
+section p{
+    color: #fff;
+}
+header img{
+    position: absolute;
+    top:10px;
+    right: 5px;
+    width: 45px;
+
+}
+.Invite_Header{
+    font-size: 18px;
+}
+.Invite_Header img{
+    width: 40%;
+    margin: 10% 30% 5%;
+}
+.Invite_Yellow{
+    color: #c8a163;
+}
+.Invite_White{
+    color: #fff;
+}
+.Invite_Header p{
+    padding-top: 10px;
+    text-align: center;
+}
+.Invite_Flag{
+    width: 8%;
+    margin: 20px 46%;
+}
+.Invite_Big{
+    font-size: 20px;
+}
+.Invite_S1{
+    margin: 30px auto;
+    line-height: 25px;
+    color: #fff;
+}
+.Invite_S2{
+    line-height: 25px;
+    color: #fff;
+}
+.Invite_Se{
+    text-align: center;
+}
+.Invite_Foot{
+    padding-bottom: 20px;
+}
+.Invite_Foot p{
+    margin: 10px 0;
+}

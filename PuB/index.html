@@ -1,0 +1,65 @@
+<!--
+Created by huqiwen on 16/5/12.
+describe : 又是考试季，PU币为你加油
+-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>又是考试季，PU币为你加油</title>
+</head>
+<body style="background: #fff;">
+<header style="top:0;">
+    <img class="header_img" src="http://pic.pocketuni.net/data/sys_pic/PuB/trafficA.jpg">
+</header>
+<article style="margin-top:0;">
+    <section class="aname">
+        <span class="name">活动主题&emsp13;&emsp13;</span>
+        <span class="info">又是考试季，PU币为你加油</span>
+    </section>
+
+    <section class="aname">
+        <span class="name">活动时间&emsp13;&emsp13;</span>
+        <span class="info">2016年6月15日&emsp13;-&emsp13;2016年7月15日</span>
+    </section>
+    <section class="aname">
+        <span class="name">活动对象&emsp13;&emsp13;</span>
+        <span class="info">江苏省在校大学生<span class="tips">(已完成实名认证用户不参与此次活动)</span></span>
+    </section>
+    <section class="aname">
+        <span class="name">活动内容&emsp13;&emsp13;</span>
+        <span class="info">参与用户进行PU币充值，选择面值50元的PU币充值成功后，即可获赠5PU币。</span>
+    </section>
+    <section class="aname">
+        <p class="name">注意事项:</p>
+        <p class="ainfo">1.&emsp13;充值流程：点击下方"去充值"或登陆PU-我的-PU币-充值 </p>
+        <p class="ainfo">2.&emsp13;活动期间，每人进行PU币充值仅享有一次返现。</p>
+        <p class="ainfo">3.&emsp13;PU币充值成功后5个工作日内返现金额到账。</p>
+        <p class="ainfo">4.&emsp13;PU币自发放日起有效期为三个月。</p>
+        <p class="ainfo">5.&emsp13;优惠名额有3000个，先到先得。</p>
+        <p class="ainfo">6.&emsp13;本次活动最终解释权归天平所有。</p>
+    </section>
+</article>
+<footer>
+    <button id="goC">
+         去充值
+    </button>
+    <p>本次活动由PU口袋校园鼎力支持</p>
+</footer>
+</body>
+<script>
+ var btn = document.getElementById("goC");
+ btn.addEventListener("click", function () {
+     try{
+         Android.openInternalPage("charge", "", "", "", "", "", "");
+     }catch (e){
+         alert("请在PU中打开");
+     }
+ },false);
+</script>
+</html>
