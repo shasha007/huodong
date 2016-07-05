@@ -1,0 +1,89 @@
+<!--
+Created by huqiwen on 16/5/12.
+describe : 又是考试季，PU币为你加油
+-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>0元领 限量版PU仔情侣U盘</title>
+</head>
+<body style="background: #fff;" onload="setActionBar('天零零送PU仔优盘', '', '');">
+<header style="top:0;">
+    <img class="header_img" src="images/disk.jpg">
+</header>
+<article style="margin-top:0;">
+    <section class="aname">
+        <span class="name">活动主题&emsp13;&emsp13;</span>
+        <span class="info">0元领 限量版PU仔情侣U盘</span>
+    </section>
+    <section class="aname">
+        <span class="name">活动名称&emsp13;&emsp13;</span>
+        <span class="info">天零零</span>
+    </section>
+    <section class="aname">
+        <span class="name">活动内容&emsp13;&emsp13;</span>
+        <span class="info">免费赠送“限量版PU仔情侣U盘”100对，原价66元，附赠给每位中奖用户PU仔情侣钥匙扣1对</span>
+    </section>
+    <section class="aname">
+        <span class="name">活动时间&emsp13;&emsp13;</span>
+        <span class="info">2016年6月28日&emsp13;-&emsp13;2016年7月25日</span>
+    </section>
+    <section class="aname">
+        <span class="name">活动人群&emsp13;&emsp13;</span>
+        <span class="info">江苏省内PU用户</span>
+    </section>
+    <section class="aname">
+        <p class="name">活动规则:</p>
+        <p class="ainfo">1.&emsp13;用户需先支付9.9元获得参与资格 </p>
+        <p class="ainfo">2.&emsp13;参与人数每满50人，PU将随机抽取1名幸运者免费赠送</p>
+        <p class="ainfo">3.&emsp13;中奖名单将在微信公众号“校园咖”公示</p>
+        <p class="ainfo">4.&emsp13;活动结束<span class="red">三个工作日内</span>，PU将<span class="red">全额返还</span>所有参与用户支付的金额到PU币</p>
+    </section>
+    <section class="aname">
+        <p class="name">注意事项:</p>
+        <p class="ainfo">1.&emsp13;中奖用户需在微信公众号“校园咖”预留本人收件信息 </p>
+        <p class="ainfo">2.&emsp13;PU仔情侣U盘内存容量为8G /个</p>
+        <p class="ainfo">3.&emsp13;可将下一期活动礼品在微信公众号“校园咖”留言，天平会及时关注并尽量实现你的愿望</p>
+        <p class="ainfo">4.&emsp13;如有疑问，请咨询PU客服QQ：2073662442</p>
+        <p class="ainfo">5.&emsp13;活动最终解释权归“PU口袋校园天平所有”</p>
+    </section>
+</article>
+<footer>
+    <button id="goC">
+        去参与
+    </button>
+    <p>本次活动由PU口袋校园鼎力支持</p>
+</footer>
+</body>
+<script>
+
+    var btn = document.getElementById("goC");
+ btn.addEventListener("click", function () {
+
+         window.location.href = "http://pocketuni.net/index.php?app=pufinance&mod=PuCredit&act=diskpay";
+ },false);
+
+ function setActionBar(title, imgUrl, func) {
+     try {
+         Android.setActionBarMenuImage(title, imgUrl, func);
+     } catch (e) {
+         setTimeout(function () {
+             try{
+                 Android.setActionBarMenuImage(title, imgUrl, func);
+             } catch (e){
+                 setTimeout(function () {
+                     Android.setActionBarMenuImage(title, imgUrl, func);
+                 }, 50);
+             }
+         }, 50);
+     }
+ }
+
+</script>
+</html>
